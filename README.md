@@ -6,3 +6,5 @@ This repo creates a set of resources to deploy AWS EKS cluster. Cluster comes up
 Next step here would be to create the ci/cd, i want to implement Jenkins for this purpose., since it does come with all we need to make the pipeline configurable and does integrate with a lot of tools so we don't expose any sensitive information to the world. Since my networking doesn't recognize the services i wouldn't be able to show case the jenkins in action.
 
 For DNS i would like to deploy externl-dns, so any service will be assigned to the dns which will be registered at ROUTE53
+
+For monitoring and alerting i think datadog could be a good fit, since it has all this functionality out of the box, but i know it does comes with the price, so in case we are trying to achieve targeted monitoring in order to save some $$ than i think prometheus agent could be implemented and configured to alert with alertmanager.
